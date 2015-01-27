@@ -1,0 +1,12 @@
+{
+  "name": "myFullScreenProject",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+   "static-site-generator": "git+ssh://git@github.com:apinfodesign/staticSiteFun.git"
+  }
+}
+
