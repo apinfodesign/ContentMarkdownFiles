@@ -5,7 +5,7 @@ var express = require('express');
 var fs = require('fs');		
 var jade = require('jade');
 var contentFilepath = '/../../ContentMarkdownFiles/posts/'; 
-		 
+
 
 ///give contentFilepath as argument when calling gatherPostFiles
 var gatherPostFiles = function(arg){ 
@@ -36,6 +36,6 @@ var gatherPostFiles = function(arg){
 return fileCollector;
 };  //close gatherPostFiles
 
-module.exports.fileimport = gatherPostFiles;
+module.exports = gatherPostFiles;
 
 
