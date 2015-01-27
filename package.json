@@ -6,7 +6,6 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
-   "static-site-generator": "git+ssh://git@github.com:apinfodesign/staticSiteFun.git"
-  }
+   }
 }
 
