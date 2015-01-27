@@ -36,6 +36,6 @@ var gatherPostFiles = function(arg){
 return fileCollector;
 };  //close gatherPostFiles
 
-module.exports = gatherPostFiles;
+module.exports.fileimport = gatherPostFiles;
 
 
