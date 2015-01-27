@@ -2,6 +2,10 @@
 var express = require('express');
 //var staticlib = require('staticSiteFun');
 //var router =  express.Router();
+var fs = require('fs');		
+var jade = require('jade');
+var contentFilepath = '/../../ContentMarkdownFiles/posts/'; 
+		 
 
 ///give contentFilepath as argument when calling gatherPostFiles
 var gatherPostFiles = function(arg){ 
@@ -32,6 +36,6 @@ var gatherPostFiles = function(arg){
 return fileCollector;
 };  //close gatherPostFiles
 
-module.exports = fileimport;
+module.exports.fileimport = gatherPostFiles;
 
 
