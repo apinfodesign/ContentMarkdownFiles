@@ -4,7 +4,7 @@ var express = require('express');
 //var router =  express.Router();
 var fs = require('fs');		
 var jade = require('jade');
-var contentFilepath = '/../../ContentMarkdownFiles/posts/'; 
+//var contentFilepath = '/../../ContentMarkdownFiles/posts/'; 
 
 
 ///give contentFilepath as argument when calling gatherPostFiles
