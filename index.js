@@ -10,7 +10,7 @@ var jade = require('jade');
 ///give contentFilepath as argument when calling gatherPostFiles
 var gatherPostFiles = function(arg){ 
 	var contentFilepath = arg;
- 	var blogPostFiles = fs.readdirSync(__dirname + contentFilepath ); 
+ 	var blogPostFiles = fs.readdirSync(contentFilepath ); 
 	var collector=[];      //collects file names
 	var fileCollector=[];  //collects file contents
 	// regex find all .jade content files in posts directory 
@@ -19,7 +19,7 @@ var gatherPostFiles = function(arg){
 		var pattern = new RegExp(".jade");   //match file .jade
 		if ( pattern.test(value)  )  // file IS dot jade
 			{
-			inFile= fs.readFileSync( __dirname + contentFilepath + blogPostFiles[index]  );
+			inFile= fs.readFileSync(contentFilepath + blogPostFiles[index]  );
 			inFile = jade.render(inFile);   //make jade into html
 			fileCollector.push(inFile);    //keep file content		
 			collector.push(value);         //keep file name, not really needed?
