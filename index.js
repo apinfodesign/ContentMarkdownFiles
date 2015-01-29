@@ -7,7 +7,8 @@ var jade = require('jade');
 ///give contentFilepath as argument when calling gatherPostFiles
 var gatherPostFiles = function(arg){ 
 	var contentFilepath = arg;
-  	var blogPostFiles;   
+  	//below reads array of file names into blogPostFiles
+  	var blogPostFiles = fs.readdirSync(contentFilepath ); 
  	var fileCollector=[];  //collects file contents
 	// regex find all .jade content files in posts directory 
 	blogPostFiles.forEach(function cleanFiles (value, index, array){
