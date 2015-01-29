@@ -13,7 +13,7 @@ var gatherPostFiles = function(arg){
 	var contentFilepath = arg;
  	var blogPostFiles = fs.readdirSync(contentFilepath ); 
  	console.log(blogPostFiles + " is blogPostFiles");
-	var collector=[];      //collects file names
+	//var collector=[];      //collects file names
 	var fileCollector=[];  //collects file contents
 	// regex find all .jade content files in posts directory 
 	blogPostFiles.forEach(function cleanFiles (value, index, array){
@@ -24,8 +24,8 @@ var gatherPostFiles = function(arg){
 			inFile= fs.readFileSync(contentFilepath + blogPostFiles[index]  );
 			inFile = jade.render(inFile);   //make jade into html
 			fileCollector.push(inFile);    //keep file content		
-			collector.push(value);         //keep file name, not really needed?
-			console.log("Is a dot jade file.");
+			//collector.push(value);         //keep file name, not really needed?
+			//console.log("Is a dot jade file.");
 			}
 		// else { //console.log("DID NOT FIND dot jade FILE."); }
 	return fileCollector;
