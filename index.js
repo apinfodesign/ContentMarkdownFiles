@@ -17,8 +17,7 @@ var gatherPostFiles = function(arg){
 		if ( pattern.test(value)  )  // file IS dot jade
 			{
 			inFile = jade.render(
-				fs.readFileSync(contentFilepath + blogPostFiles[index]) 
-								);
+				fs.readFileSync(contentFilepath + blogPostFiles[index]) );
 			
 			fileCollector.push(inFile);//push html from jade into array  		
 			} 
