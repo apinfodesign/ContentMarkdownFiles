@@ -15,9 +15,11 @@ var gatherPostFiles = function(arg){
 		var infile;  //takes fs incoming file
 		var pattern = new RegExp(".jade");   //match file .jade
 		if ( pattern.test(value)  )  // file IS dot jade
-			{inFile = jade.render(fs.readFileSync(
-				   	contentFilepath + blogPostFiles[index]  );
-					)
+			{
+			inFile = jade.render(
+				fs.readFileSync(contentFilepath + blogPostFiles[index]) 
+								);
+			
 			fileCollector.push(inFile);//push html from jade into array  		
 			} 
 	return fileCollector;
