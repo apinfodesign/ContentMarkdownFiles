@@ -3,7 +3,7 @@
 var express = require('express');
 var fs = require('fs');		
 var jade = require('jade');
-
+ 
 ///give contentFilepath as argument when calling gatherPostFiles
 var gatherPostFiles = function(arg){ 
 	var contentFilepath = arg;
@@ -19,7 +19,7 @@ var gatherPostFiles = function(arg){
 			{
 			console.log("found json at index " + index);
 //			inFile = jade.render(fs.readFileSync(contentFilepath + blogPostFiles[index]) );
- 			inFile = json.parse(fs.readFileSync(contentFilepath + blogPostFiles[index]) );
+ 			inFile = JSON.parse(fs.readFileSync(contentFilepath + blogPostFiles[index]) );
  			console.log("inFile is: " + inFile);
 			fileCollector.push(inFile);//push html from jade into array  		
 			}
