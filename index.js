@@ -29,6 +29,6 @@ console.log(fileCollector);
 return fileCollector;
 };  //close gatherPostFiles
 
-module.exports.fileimport = gatherPostFiles;
+module.exports.fileimport2 = gatherPostFiles;
 
 
