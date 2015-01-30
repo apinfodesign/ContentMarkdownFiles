@@ -17,6 +17,7 @@ var gatherPostFiles = function(arg){
 		var jsonPattern = new RegExp(".json"); //match file .json
 		if ( pattern.test(value)  )  // file IS dot json
 			{
+			console.log("found json");
 //			inFile = jade.render(
 //				fs.readFileSync(contentFilepath + blogPostFiles[index]) );
  			inFile = (contentFilepath + blogPostFiles[index]) ;
