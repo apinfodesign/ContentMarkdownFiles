@@ -2,13 +2,8 @@
   "name": "fileimport2",
   "version": "0.0.0",
   "private": true,
-  "scripts": {
-    "start": "node ./bin/www"
-  },
-  "dependencies": {
-
-   },
-   "main": "index.js"
-
+  "main": "index.js"
 }
 
+
+ 
