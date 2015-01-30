@@ -18,9 +18,9 @@ var gatherPostFiles = function(arg){
 		if ( jsonPattern.test(value)  )  // file IS dot json
 			{
 			console.log("found json");
-			inFile = jade.render(
-				fs.readFileSync(contentFilepath + blogPostFiles[index]) );
-// 			inFile = (contentFilepath + blogPostFiles[index]) ;
+//			inFile = jade.render(fs.readFileSync(contentFilepath + blogPostFiles[index]) );
+ 			inFile = (contentFilepath + blogPostFiles[index]);
+ 			
 			fileCollector.push(inFile);//push html from jade into array  		
 			}
 console.log(fileCollector);
