@@ -13,14 +13,14 @@ var gatherPostFiles = function(arg){
 	// regex find all .jade content files in posts directory 
 	blogPostFiles.forEach(function cleanFiles (value, index, array){
 		var infile;  //takes fs incoming file
-		//var pattern = new RegExp(".jade");   //match file .jade
-		var jsonPattern = new RegExp(".json"); //match file .json
+		var pattern = new RegExp(".jade");   //match file .jade
+		//var jsonPattern = new RegExp(".json"); //match file .json
 		if ( pattern.test(value)  )  // file IS dot json
 			{
-			console.log("found json");
-//			inFile = jade.render(
-//				fs.readFileSync(contentFilepath + blogPostFiles[index]) );
- 			inFile = (contentFilepath + blogPostFiles[index]) ;
+//			console.log("found json");
+			inFile = jade.render(
+				fs.readFileSync(contentFilepath + blogPostFiles[index]) );
+// 			inFile = (contentFilepath + blogPostFiles[index]) ;
 			fileCollector.push(inFile);//push html from jade into array  		
 			}
 console.log(fileCollector);
