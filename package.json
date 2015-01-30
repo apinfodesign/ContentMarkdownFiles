@@ -1,0 +1,25 @@
+{
+  "name": "PutJadeFilesInAnArray",
+  "version": "1.0.0",
+  "description": "puts files in jade or other array",
+  "main": "index.js",
+  "scripts": {
+    "test": "`node bin`"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/apinfodesign/PutJadeFilesInAnArray.git"
+  },
+  "keywords": [
+    "jade",
+    "file",
+    "read",
+    "json"
+  ],
+  "author": "mh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/apinfodesign/PutJadeFilesInAnArray/issues"
+  },
+  "homepage": "https://github.com/apinfodesign/PutJadeFilesInAnArray"
+}
