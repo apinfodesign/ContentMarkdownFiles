@@ -19,7 +19,7 @@ var gatherPostFiles = function(arg){
 			{
 			console.log("found json at index " + index);
 //			inFile = jade.render(fs.readFileSync(contentFilepath + blogPostFiles[index]) );
- 			inFile = fs.readFileSync(contentFilepath + blogPostFiles[index]);
+ 			inFile = json.parse(fs.readFileSync(contentFilepath + blogPostFiles[index]) );
  			console.log("inFile is: " + inFile);
 			fileCollector.push(inFile);//push html from jade into array  		
 			}
@@ -30,5 +30,9 @@ return fileCollector;
 };  //close gatherPostFiles
 
 module.exports.fileimport2 = gatherPostFiles;
+
+
+//use require to parse as json
+//or use json.parse
 
 
