@@ -31,8 +31,9 @@ return fileCollector;
 
 
 var gatherConfigurationInfo = function(arg){
-	inFile = JSON.parse(fs.readFileSync(/configure/siteConfigurationUser.json));
-	console.log (inFile.siteName + " " + inFile.siteNameSubtitle);
+	console.log("reading gatherConfigurationInfo");
+	// inFile = JSON.parse(fs.readFileSync(/configure/siteConfigurationUser.json));
+	// console.log (inFile.siteName + " " + inFile.siteNameSubtitle);
 };
 
 
