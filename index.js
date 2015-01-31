@@ -29,6 +29,15 @@ console.log("fileCollector is: "+fileCollector);
 return fileCollector;
 };  //close gatherPostFiles
 
+
+var gatherConfigurationInfo = function(arg){
+	inFile = JSON.parse(fs.readFileSync(/configure/siteConfiguration.json));
+	console.log (inFile.siteName + " " + inFile.siteNameSubtitle);
+};
+
+gatherConfigurationInfo();
+
+
 module.exports.fileimport2 = gatherPostFiles;
 
 

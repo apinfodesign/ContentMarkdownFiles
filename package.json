@@ -4,7 +4,7 @@
   "description": "puts files in jade or other array",
   "main": "index.js",
   "scripts": {
-    "test": "`node bin`"
+    "test": " `node bin` "
   },
    "dependencies": {
       "jade": "~1.9.1"
