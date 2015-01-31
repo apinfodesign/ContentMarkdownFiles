@@ -38,7 +38,7 @@ var gatherConfigurationInfo = function(arg){
  
 module.exports.fileimport2 = gatherPostFiles;
 
-//EVERYTHING IN FILEIMPORT2 module.exports.configure2 = gatherConfigurationInfo;
+module.exports.configure2 = gatherConfigurationInfo;
 
 //use require to parse as json
 //or use json.parse
