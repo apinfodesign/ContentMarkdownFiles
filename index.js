@@ -31,14 +31,14 @@ return fileCollector;
 
 
 var gatherConfigurationInfo = function(arg){
-	inFile = JSON.parse(fs.readFileSync(/configure/siteConfiguration.json));
+	inFile = JSON.parse(fs.readFileSync(/configure/siteConfigurationUser.json));
 	console.log (inFile.siteName + " " + inFile.siteNameSubtitle);
 };
 
  
 module.exports.fileimport2 = gatherPostFiles;
 
-module.exports.configure2 = gatherConfigurationInfo;
+//EVERYTHING IN FILEIMPORT2 module.exports.configure2 = gatherConfigurationInfo;
 
 //use require to parse as json
 //or use json.parse
