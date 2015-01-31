@@ -40,6 +40,8 @@ module.exports.fileimport2 = gatherPostFiles;
 
 module.exports.configure2 = gatherConfigurationInfo;
 
+console.log (gatherConfigurationInfo());
+
 //use require to parse as json
 //or use json.parse
 
