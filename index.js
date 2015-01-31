@@ -35,12 +35,15 @@ var gatherConfigurationInfo = function(arg){
 	console.log (inFile.siteName + " " + inFile.siteNameSubtitle);
 };
 
- 
-module.exports.fileimport2 = gatherPostFiles;
 
-module.exports.configure2 = gatherConfigurationInfo;
+module.exports = {
+			fileimport2: gatherPostFiles,
+			configure2: gatherConfigurationInfo
+}
 
-console.log (gatherConfigurationInfo());
+// module.exports.fileimport2 = gatherPostFiles;
+
+//console.log ( gatherConfigurationInfo() );
 
 //use require to parse as json
 //or use json.parse
