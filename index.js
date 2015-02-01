@@ -32,14 +32,16 @@ return fileCollector;
 
 var gatherConfigurationInfo = function(arg){
 	console.log("reading gatherConfigurationInfo");
+	var outfile="gatherCofigurationInfo happened";
 	// inFile = JSON.parse(fs.readFileSync(/configure/siteConfigurationUser.json));
 	// console.log (inFile.siteName + " " + inFile.siteNameSubtitle);
+	return outfile;
 };
 
 
 module.exports = {
 			fileimport2: gatherPostFiles,
-			configure2: gatherConfigurationInfo
+			configure2: gatherConfigurationInfo,
 }
 
 // module.exports.fileimport2 = gatherPostFiles;
