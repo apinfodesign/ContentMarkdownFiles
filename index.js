@@ -44,7 +44,7 @@ var gatherConfigurationInfo = function(arg){
 
 module.exports = {
 			fileimport2: gatherPostFiles,
-			configure2: gatherConfigurationInfo,
+			configure2: gatherConfigurationInfo
 }
 
 // module.exports.fileimport2 = gatherPostFiles;
