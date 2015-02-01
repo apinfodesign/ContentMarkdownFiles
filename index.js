@@ -35,7 +35,7 @@ var gatherConfigurationInfo = function(arg){
 	var configureFilePath = arg;
 //var outfile="gatherCofigurationInfo happened";
 	console.log("reading gatherConfigurationInfo and configurePath is"+ configureFilePath);
-	configCollector = JSON.parse(fs.readFileSync(configureFilePath));
+	configCollector = JSON.parse(fs.readFileSync(configureFilePath + siteConfigurationUser.json));
  // 	console.log (inFile.siteName + " " + inFile.siteNameSubtitle);
 	// console.log( configInfo );
 	return configCollector;
