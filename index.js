@@ -23,6 +23,7 @@ var gatherPostFiles = function(arg){
  			console.log("inFile is: " + inFile);
 			fileCollector.push(inFile);//push html from jade into array  		
 			}
+
 console.log("fileCollector is: "+fileCollector);
 
  	});
@@ -31,11 +32,13 @@ return fileCollector;
 
 
 var gatherConfigurationInfo = function(arg){
-	console.log("reading gatherConfigurationInfo");
+	var configurePath = arg;
 	var outfile="gatherCofigurationInfo happened";
-	// inFile = JSON.parse(fs.readFileSync(/configure/siteConfigurationUser.json));
+	console.log("reading gatherConfigurationInfo");
+	inFile = JSON.parse(fs.readFileSync(configurePath));
 	// console.log (inFile.siteName + " " + inFile.siteNameSubtitle);
-	return outfile;
+	console.log( configInfo );
+	return configInfo;
 };
 
 
