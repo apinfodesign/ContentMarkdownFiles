@@ -33,12 +33,12 @@ return fileCollector;
 
 var gatherConfigurationInfo = function(arg){
 	var configurePath = arg;
-	var outfile="gatherCofigurationInfo happened";
-	console.log("reading gatherConfigurationInfo");
-	inFile = JSON.parse(fs.readFileSync(configurePath));
-	// console.log (inFile.siteName + " " + inFile.siteNameSubtitle);
-	console.log( configInfo );
-	return configInfo;
+//var outfile="gatherCofigurationInfo happened";
+//console.log("reading gatherConfigurationInfo");
+	configCollector = JSON.parse(fs.readFileSync(configurePath));
+ // 	console.log (inFile.siteName + " " + inFile.siteNameSubtitle);
+	// console.log( configInfo );
+	return configCollector;
 };
 
 
