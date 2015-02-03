@@ -1,27 +1,19 @@
 {
-"siteName": " ",
+"siteName": "BLANK - USER ENTERED",
 
-"siteNameSubtitle": " ",
+"siteNameSubtitle": " NOT CURRENTLY DEFINED ",
 
-"siteHeadBackgroundImage":"",
+"siteHeadBackgroundImage":" NOT CURRENTLY DEFINED ",
 
 "staticPageList":{
 
 	"contactExample": {
-					"staticPageName": "Contact Information",
-					"staticPageTextContent":  "Telephone 555 555 5555, Email: a@b.com.  
- 					           Edit your siteConfiguration.json file to change this information.
-					           Be careful not to change commas or brackets, except as needed to 
-					           separate new elements.  Remember: The last element in a list 
-					           has no comma after it."
+					"staticPageName": "Contact ",
+					"staticPageTextContent":  " "
 						},
 	"aboutExample": {
 					"staticPageName": "About Us",
-					"staticPageTextContet":  "We are a friendly new company that welcomes your business.  
-					           Edit your siteConfiguration.json file to change this information.
-					           Be careful not to change commas or brackets, except as needed to 
-					           separate new elements.  Remember: The last element in a list 
-					           has no comma after it."
+					"staticPageTextContet":  " "
 					}
 				}
 }
